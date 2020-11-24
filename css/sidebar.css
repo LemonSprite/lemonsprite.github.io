@@ -1,0 +1,56 @@
+@import 'main.css';
+
+
+.sidebar {
+	position: fixed;
+	height: 100vh;
+	display: block;
+    width: var(--sidebar-width);
+    background: var(--abu-dark);
+	left: 0;
+	top: 0;
+	z-index: 5;
+	box-shadow: 0 0 5px #000;
+}
+.sidebar-head {
+	height: var(--navbar-height);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.sidebar-head a img {
+	display: block;
+	padding: .8rem;
+	height: var(--navbar-height);
+}
+.sidebar-body {	
+	height: calc(100vh - var(--navbar-height));
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-body li, .sidebar-body li a { display: block; }
+.sidebar-body li a {
+	height: 150px;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	line-height: 1.8em;
+	align-items: center;
+}
+.sidebar-body li a:hover {
+	background: var(--abu-light);
+	cursor: default;
+}
+.sidebar-body li a i { font-size: 1.5em; }
+.sidebar-body li a p { 
+	font-size: .7em;
+	font-family: Titillium-Xlight;
+	letter-spacing: .1em;
+}

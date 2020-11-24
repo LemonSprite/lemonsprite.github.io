@@ -1,0 +1,128 @@
+@import 'main.css';
+
+.konten { 
+    margin-left: var(--sidebar-width);
+}
+.navbar {
+    background: var(--abu-dark);
+    height: var(--navbar-height);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 4px #000;
+}
+.navbar h2 {
+    font-size: 1.3rem;
+    font-family: 'Titillium-Bold';
+    font-style: italic;
+    letter-spacing: .2em;
+}
+.navbar .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user .circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+/* Main Konten Style */
+
+.banner { 
+	justify-content: space-around;
+	background: var(--abu-light);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.kartu {
+	pointer-events: none;
+	background: var(--abu-dark);
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+	width: 18rem;
+}
+.kartu i {
+	font-size: 2.3em;
+	height: 1.5em;
+	align-items: center;
+	display: flex;
+	padding-right: 15px;
+	margin-right: 15px;
+	border-right: 1px solid rgba(255,255,255,.5);
+}
+.kartu h3 { 
+	font-size: 18px; 
+	font-weight: bold;
+	color: var(--oranye-light);
+}
+.kartu h4 { font-size: 20px; }
+.splitter {
+	background: url(../img/bg.png) no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	top: 0;
+	color: white;
+}
+
+
+.overview { padding: 0 40px; }
+
+.overview h1 {
+	color: var(--oranye-light);
+    margin-top: 1rem;
+    font-size: 1.6rem;
+	font-family: Titillium-Bold !important;
+	letter-spacing: .2em;
+}
+.overview .split {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.split .chart-line { flex: 2; }
+.split .chart-line h2, .split .chart-bar h2 {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 1.2rem;
+}
+.split .chart-bar { 
+    margin-left: 20px;
+    text-align: center;
+    flex: 1; 
+}
+
+.konten-footer {
+    display: flex;
+    flex-direction: column;
+    opacity: .5;
+    font-size: .8rem;
+	margin-top: 1rem;
+	position: relative;
+	padding: 1rem 2rem;
+    justify-content: center;
+	align-items: center;
+	line-height: 1.2em;
+}
+.konten-footer img {
+    display: block;
+	height: 2rem;
+	margin-bottom: 10px;
+}
