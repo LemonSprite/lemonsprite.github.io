@@ -13,6 +13,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
     box-shadow: 0 0 4px #000;
 }
 .navbar h2 {
@@ -114,7 +115,6 @@
     flex-direction: column;
     opacity: .5;
     font-size: .8rem;
-	margin-top: 1rem;
 	position: relative;
 	padding: 1rem 2rem;
     justify-content: center;
@@ -125,4 +125,51 @@
     display: block;
 	height: 2rem;
 	margin-bottom: 10px;
+}
+
+.kasual {
+    padding:  1.4rem;
+}
+.pageHead {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.inner-konten {
+    margin-top: 20px;
+    position: relative;
+}
+.btn-grup {
+    background: var(--abu-dark);
+    display: flex;
+    width: 22rem;
+    margin: auto;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+}
+th {text-align: left;}
+td.btn-grup {
+    width: 100%;
+    background: transparent;
+    padding: 0 !important;
+}
+td .btn {
+    width: 20px;
+    color: var(--abu-dark);
+    border-radius: 0;
+}
+.btn {
+    padding: .5rem 1rem;
+    display: block;
+    flex: 1;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn.aktif {
+    color: #fff;
+    background: var(--oranye-dark)
+}
+.tabel-data {
+    padding: 2rem 4rem;
 }

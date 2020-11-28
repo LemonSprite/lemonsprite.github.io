@@ -1,10 +1,11 @@
 :root {
 	--abu-light: #13161F;
+	--abu-xlight: #1b1f2b;
 	--abu-dark: #090C14;
 	--oranye-light: #F9A136;
 	--oranye-dark: #EF8F1C;
-	--sidebar-width: 75px;
-	--navbar-height: 65px;
+	--sidebar-width: 70px;
+	--navbar-height: 70px;
 }
 @font-face {
 	font-family: Titillium;
@@ -90,6 +91,9 @@ table {
 /* Style Custom */
 
 * { box-sizing: border-box; font-family: 'Titillium'; }
+body {overflow: hidden;}
 .konten {
-    margin-left: var(--sidebar-width);
+	margin-left: var(--sidebar-width);
+	overflow-y: scroll;
+	height: 100vh;
 }
