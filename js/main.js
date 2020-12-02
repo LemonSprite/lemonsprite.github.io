@@ -18,152 +18,6 @@ function getKemarin(num){
 // fungsi untuk get bulan dan tanggal
 function dateMonth(num){  return namaHari[getKemarin(num).getDay()] + " (" + getKemarin(num).getDate() + "/" + (getKemarin(num).getMonth()+1) + ")"; }
 
-//function init()
-//{	
-//	
-//	// Loader Script
-//	const loader = document.querySelector('.loader');
-//	const main = document.querySelector('.wrapper');
-//	
-//	
-//	// cek kalo cookies udh di set
-//	if(getCookie('startup') == 1)
-//	{	
-//		// kalo udh diset langsung masuk beranda
-//		main.style.display = 'block';
-//		setTimeout(()=>(main.style.opacity = 1), 50);
-//		
-//	} else {
-//		// Kalo belum diset, loader muncul
-//		// set display jadi flex, karena di-css 'none'
-//		loader.style.display = 'flex';
-//		
-//		// Eksekusi
-//		setTimeout(() => {
-//			loader.style.opacity = 0;
-//			loader.style.display = 'none';
-//			
-//			main.style.display = 'block';
-//			setTimeout(()=>(main.style.opacity = 1), 50)
-//		}, 10000);
-//		
-//		// Set cookies supaya loader gak looping
-//		setCookies('startup',1,1,'/');
-//	}
-//	
-//	
-//	
-//	// Chart Script
-//	var clBerandaOpt = {
-//		chart: {
-//			type: 'line',
-//			zoom: {
-//				enabled: false	
-//			},
-//			height: 300,
-//		},
-//		series: [{
-//			name: 'Saldo',
-//			data: [
-//				25000,
-//				200000,
-//				120000,
-//				50000,
-//				90000
-//			]
-//		}],
-//		yaxis: {
-//			labels: {
-//				formatter: function (value) {
-//					var x = value / 1000;
-//					if(x < 1000000)
-//						return x + ' RB';
-//					else if(x >= 1000000 && x < 1000000000)
-//						return x + ' JT';
-//					else if(x >= 1000000000)
-//						return x + ' M';
-//				}
-//			}
-//		},
-//		xaxis: {
-//			categories: [
-//				getLastWeek(5),
-//				getLastWeek(4),
-//				getLastWeek(3),
-//				getLastWeek(2),
-//				getLastWeek(1)
-//			]
-//		},
-//		tooltip: {
-//			enabled: true
-//		},
-//		stroke: {
-//			curve: 'smooth',
-//			colors: [
-//				cssroot.getPropertyValue('--abu-dark').toString()
-//			]
-//		}
-//	}
-//	var clBeranda = new ApexCharts(document.querySelector(".clBeranda"), clBerandaOpt);
-//	clBeranda.render();
-//	
-//	var cbBerandaOpt = {
-//		series: [{
-//			name: 'Pemasukan',
-//        	data: [3000, 2000, 4000, 50000, 60000, 100000, 21000]
-//        }, {
-//			name: 'Pengeluaran',
-//			data: [53000, 32000, 3300, 5200, 13000, 4400, 32000]
-//        }],
-//		chart: {
-//			type: 'bar',
-//          	height: 300
-//        },
-//		colors: ['#00bc50', '#FF4560'],
-//        plotOptions: {
-//			bar: {
-//            	horizontal: true,
-//            	dataLabels: {
-//					position: 'top',
-//				},
-//			}
-//        },
-//		dataLabels: {
-//			enabled: false,
-//		},
-//        stroke: {
-//			show: true,
-//          	width: 1,
-//          	colors: ['#fff']
-//        },
-//        xaxis: {
-//          	categories: [
-//				dateMonth(1),
-//				dateMonth(2),
-//				dateMonth(3),
-//				dateMonth(4),
-//				dateMonth(5),
-//				dateMonth(6),
-//				dateMonth(7)
-//			],
-//			labels: {
-//				formatter: function(value) {
-//					var x = value / 1000;
-//					if(x < 1000000)
-//						return x + ' RB';
-//					else if(x >= 1000000 && x < 1000000000)
-//						return x + ' JT';
-//					else if(x >= 1000000000)
-//						return x + ' M';
-//				},
-//			}
-//        },
-//	};
-//    var cbBeranda = new ApexCharts(document.querySelector(".cbBeranda"), cbBerandaOpt);
-//    cbBeranda.render();
-//	
-//}
-
 // Form input buka/tutup
 function dbFormClose() 
 {
@@ -216,21 +70,34 @@ function waktu()
 		document.write('Selamat Malam, ');
 }
 
+function init()
+{
+	$('.add-btn').click(function(){
+		console.log('Log : Buka Modal');
+		$('.modal').addClass('show');
+		setTimeout(() => {
+			$('.modal').css('opacity',1);
+		}, 500);
+	});
+	
+	$('.close-btn').click(function() {
+		console.log('Log : Tutup Modal');
+		$('.modal').removeClass('show');
 
+		setTimeout(() => {
+			$('.modal').css('opacity', 0);
+		}, 500);
+	})
 
-
-//window.onscroll= function() { 
-//	// Ambil elemen
-//	var splitter = document.querySelector('.splitter');
-//
-//	// Set posisi
-//	var sticky = navbar.offsetTop;
-//
-//	// Set class sticky kalo offset sama
-//	if (window.pageYOffset >= sticky) 
-//		navbar.classList.add('sticky');
-//	else
-//		navbar.classList.remove('sticky');
-//	
-//	scrollNav();
-//};
+	window.onclick = function(e) {
+		if(e.target == document.querySelector('.modal'))
+		{
+			console.log('Log : Tutup Modal');
+			$('.modal').removeClass('show');
+	
+			setTimeout(() => {
+				$('.modal').css('opacity', 0);
+			}, 500);
+		}
+	}
+}

@@ -41,6 +41,14 @@
 
 /* Main Konten Style */
 
+.stat h1 {
+    background: var(--abu-light);
+    color: #fff;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: .2em;
+}
 .banner { 
 	justify-content: space-around;
 	background: var(--abu-light);
@@ -172,4 +180,59 @@ td .btn {
 }
 .tabel-data {
     padding: 2rem 4rem;
+}
+
+
+.info-wrap {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--navbar-height));
+}
+.info-wrap > div {
+
+}
+.info-head {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.info-wrap hr { 
+    margin-bottom: 2rem; 
+    opacity: .2; }
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+}
+.section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;;
+}
+.section .box {
+    display: flex;
+    justify-content: space-around;
+}
+.section .box a {
+    color: var(--oranye-light);
+}
+.section .box a:hover {
+    transform: scale(1.2);
+    transition: .2s ease;
+}
+.section .box a i {
+}
+.section .kartu-sosial {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3em;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: var(--abu-dark);
 }

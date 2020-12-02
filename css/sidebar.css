@@ -2,7 +2,7 @@
 
 
 .sidebar {
-	position: fixed;
+	position: absolute;
 	height: 100vh;
 	display: block;
     width: var(--sidebar-width);
@@ -60,7 +60,7 @@
 	font-family: Titillium-Xlight;
 	letter-spacing: .1em;
 	visibility: hidden;
-	width: 120px;
+	width: 150px;
 	box-shadow: 0 0 5px #000;
 	background-color: var(--oranye-dark);
 	color: #fff;
