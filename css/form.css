@@ -1,0 +1,34 @@
+form {
+    border: none;
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    background: none;
+}
+form h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.input { padding: .2em;}
+.input, .simbol-input {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid var(--abu-light);
+}
+.simbol-input > .simbol {
+    height: 100%;
+    padding: .3em .5em;
+    font-family: 'Titillium-Bold';
+    background: var(--abu-light);
+    color: #fff;
+    margin-right: 10px;
+}
+.btn.simpan {
+    background: var(--abu-light);
+    cursor: pointer;
+}

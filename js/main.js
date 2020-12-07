@@ -125,4 +125,14 @@ function init()
 			if($("[name='password']").attr('type', 'password'));
 		},5000);
 	});
+
+
+
+	// Set Default Value Tanggal
+	var now = new Date();
+	var day = ("0" + now.getDate()).slice(-2);
+	var month = ("0" + (now.getMonth() + 1)).slice(-2);
+	var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+	$('[name="tanggal"]').val(today);
+
 }
