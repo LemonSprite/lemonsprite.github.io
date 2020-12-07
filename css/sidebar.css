@@ -1,6 +1,6 @@
 @import 'main.css';
 
-
+/* Sidebar Konten */
 .sidebar {
 	position: absolute;
 	height: 100vh;
@@ -92,3 +92,31 @@
 	opacity: 1;
 }
 
+/* App Nav Konten */
+.appnav {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: calc(var(--navbar-height) + .4em);
+	border-radius: 20% 20% 0 0;
+	background: var(--abu-light);
+	z-index: 20000;
+	align-items: center;
+	color: #fff;
+	justify-content: space-between;
+}
+.appnav li { flex: 1; display: flex; justify-content: space-around; position: relative; }
+
+.appnav li a {
+	color: inherit;
+	font-size: 1.4em;
+}
+.appnav li:nth-child(2) a {
+	background-color: var(--oranye-light);
+	padding: 1.3em;
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	border-radius: 50%;
+	bottom: -1em;
+	position: absolute;
+}

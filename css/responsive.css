@@ -1,0 +1,58 @@
+@import 'main.css';
+@import 'konten.css';
+
+
+@media screen and (max-width: 1200px) 
+{
+    .konten { padding-bottom: calc(var(--navbar-height) + 5em) !important;}
+    .appnav { display: flex !important; }
+    .add-btn {display: none !important;}
+
+
+    .sidebar { display: none !important; }
+    .konten { 
+        margin-left: 0 !important;
+     }
+    .navbar { padding: 10px 20px !important; }
+
+    .add-btn { display: none;}
+    .banner { 
+        flex-direction: column;
+        width: 100% !important;
+        flex: 1;
+    }
+    .kartu {
+        margin-bottom: 10px;
+    }
+    .split {
+        flex-direction: column !important;
+    }
+    .chart-line {
+        margin: 30px 0;
+    }
+
+    .tabel-data { 
+        padding: 3em 0 0 0 !important;
+        font-size: .9em;
+    }
+    .dataTables_wrapper div:nth-child(1) {
+        float: left;
+    }
+    .dataTables_wrapper div:nth-child(2) {
+        float: right;
+    }
+    .section .kartu-sosial {
+        font-size: 2em !important;
+        width: 50px;
+        height: 50px;
+    }
+
+    
+}
+
+@media (min-width: 641px) and (max-width: 1300px)
+/* @media (min-width: 1000px)
+{
+    .konten { display:  none;}
+} */
+

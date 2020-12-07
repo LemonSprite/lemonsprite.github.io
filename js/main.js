@@ -80,6 +80,14 @@ function init()
 		}, 500);
 	});
 	
+	$('.add-btn-nav').click(function(){
+		console.log('Log : Buka Modal');
+		$('.modal').addClass('show');
+		setTimeout(() => {
+			$('.modal').css('opacity',1);
+		}, 500);
+	});
+
 	$('.close-btn').click(function() {
 		console.log('Log : Tutup Modal');
 		$('.modal').removeClass('show');
