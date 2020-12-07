@@ -1,0 +1,107 @@
+@import 'main.css';
+
+.auth-wrap {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background: linear-gradient(180deg, rgba(0,0,0,.8), rgba(0,0,0,0), rgba(0,0,0,.4)), url('../img/auth-bg.png');
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+}
+.auth-contentwrap {
+    max-width: 1080px;
+}
+.head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5em;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.head img {
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin:  10px auto;
+}
+.head h1 {
+    font-size: 1.4em;
+}
+form {
+    padding: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    width: 480px;
+    background-color: rgb(250, 250, 250);
+
+}
+form input {
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    font-size: 1em;
+}
+form .grup {
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.grup-horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+.grup-horizontal > div {
+    width: 100%;
+    margin-right: 10px ;
+}
+.grup-horizontal > div:last-child {
+    margin-right: 0;
+}
+.inwrap, .grup .passinput {
+    display: flex;
+    border: 1px solid var(--abu-light);
+    border-radius: 2px;
+    padding: .5em;
+    align-items: center;
+}
+.passinput input {
+    flex: 4;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+.passinput a {
+    border: none;
+    margin-left: 10px;
+    background: none;
+    outline: none;
+}
+.eye { 
+    padding:  0 10px;
+    cursor: pointer;
+    height: 100%;
+}
+hr {
+    margin-top: 20px;
+    opacity: .3;
+}
+.lupa {
+    font-size: .9em;;
+}
+.btn.masuk, .btn.lupa {
+    margin-top: 20px;
+    background: var(--oranye-light);
+    cursor: pointer;
+}
+.btn.masuk:hover {
+    background-color: var(--oranye-dark);
+}
+.ingat {
+    display: block;
+    margin-top: 10px;
+}

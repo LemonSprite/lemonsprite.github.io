@@ -1,5 +1,6 @@
 @import 'main.css';
 @import 'konten.css';
+@import 'login.css';
 
 
 @media screen and (max-width: 1200px) 
@@ -47,10 +48,11 @@
         height: 50px;
     }
 
-    
+    .auth-in, .auth-lupa { width: 380px; }
+    .btn.lupa, .btn.masuk { width: 100%; margin-top: 10px; background-color: var(--oranye-light); outline: none; border: none;}
 }
 
-@media (min-width: 641px) and (max-width: 1300px)
+/* @media (min-width: 641px) and (max-width: 1300px) */
 /* @media (min-width: 1000px)
 {
     .konten { display:  none;}

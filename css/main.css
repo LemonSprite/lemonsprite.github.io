@@ -4,6 +4,8 @@
 	--abu-dark: #090C14;
 	--oranye-light: #F9A136;
 	--oranye-dark: #EF8F1C;
+	--hijau-dark: #00F3AF;
+	--hijau-light: #7CDFC2;
 	--sidebar-width: 70px;
 	--navbar-height: 70px;
 }
@@ -96,4 +98,11 @@ body {overflow: hidden;}
 	margin-left: var(--sidebar-width);
 	overflow-y: scroll;
 	height: 100vh;
+}
+
+.btn {
+	border: none;
+	border-radius: 0;
+	width: 100%;
+	outline: none;
 }

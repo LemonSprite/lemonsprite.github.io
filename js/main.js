@@ -108,4 +108,21 @@ function init()
 			}, 500);
 		}
 	}
+
+
+	$('.eye').click(function(){
+		let x = document.querySelector('[name="password"]')
+		if(x.type === 'password')
+		{
+			console.log(true);
+			$("[name='password']").attr('type', 'text');
+		} else {
+			console.log(false);
+			$("[name='password']").attr('type', 'password');
+		};
+
+		setInterval(() => {
+			if($("[name='password']").attr('type', 'password'));
+		},5000);
+	});
 }
