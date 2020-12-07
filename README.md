@@ -9,7 +9,8 @@
  <li><strong>Ongoing...</strong></li>
 </ul>
 
-
-<a href='https://lemonsprite.github.io/Duit-Dompet-Mockup'><h3 align='center'>Lihat Demo</h3></a>
- 
- 
+**<h3 align='center'>Demo MockUp Aplikasi</h3>**
+<p align="center">
+  <a href="https://lemonsprite.github.io/Duit-Dompet-Mockup">Demo Aplikasi</a> |
+  <a href="https://lemonsprite.github.io/Duit-Dompet-Mockup/auth.login.html">Demo Autentikasi</a>
+</p>
